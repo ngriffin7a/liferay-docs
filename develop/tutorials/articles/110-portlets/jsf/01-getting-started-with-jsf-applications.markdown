@@ -449,9 +449,10 @@ process.
 
     Managed beans are Java beans that are managed by the JSF framework. Managed
     beans annotated with `@RequestScoped` are usually responsible for handling
-    actions and listeners. JSF *manages* these beans by creating and removing
-    the bean object from the server. Visit the linked annotations above for more
-    details.
+    actions and listeners. JSF *manages* these beans by automatically creating
+    the bean and keeping it in memory for a certain amount of time based on its
+    scope. After going out-of-scope, the bean is made available for garbage collection.
+    Visit the linked annotations above for more details.
 
 2.  Add the following methods and field to your `ExampleBacking.java` class:
 
