@@ -11,12 +11,10 @@ By default, all out of the box Asset Types are included as facet terms:
 - Wiki Page
 - Document
 - User
-- Bookmarks Folder
 - Blogs Entry
 - Form Record
 - Documents Folder
 - Dynamic Data Lists Record
-- Bookmarks Entry
 - Web Content Article
 - Message Boards Message
 - Calendar Event
@@ -30,7 +28,7 @@ The Type Facet contains several configuration options:
 : Set the URL parameter name for the Facet. The default is *type*. Searching for
 *lunar resort* and clicking on a site facet produces the URL
 
-    http://localhost:8080/web/guest/search?q=lunar resort&type=com.liferay.blogs.model.BlogsEntry
+        http://localhost:8080/web/guest/search?q=lunar resort&type=com.liferay.blogs.model.BlogsEntry
 
 **Frequency Threshold**
 : Set the maximum number of facet terms to display, regardless of how

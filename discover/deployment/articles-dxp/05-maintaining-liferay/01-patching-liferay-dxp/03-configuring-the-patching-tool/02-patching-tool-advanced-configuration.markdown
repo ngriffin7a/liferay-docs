@@ -12,7 +12,7 @@ A Patching Tool configuration file typically looks like this:
 
 The properties above (described fully [below](#using-profiles-with-the-patching-tool)) 
 define the location of
-[Liferay Home](/discover/deployment/-/knowledge_base/7-1/installing-product#liferay-home),
+[Liferay Home](/discover/deployment/-/knowledge_base/7-1/installing-liferay#liferay-home),
 the patching mode (binary or source), the path to where WAR files are deployed
 in the app server, and the global library path. The tool's auto-discovery bases
 the OSGi module framework paths on the Liferay Home. If, however, you changed
@@ -39,7 +39,7 @@ You can create profiles for multiple runtimes by running auto-discovery or
 creating them manually. To auto-discover other runtimes, run the Patching Tool
 with parameters like this: 
 
-    ./patching-tool.sh [name of profile] auto-discovery [path/to/runtime]
+    ./patching-tool.sh [name of profile] auto-discovery [path/to/Liferay Home]
 
 This runs the same discovery process, but on the path you specify. It writes the
 profile information to a file called `[name of profile].properties`.
@@ -77,7 +77,7 @@ property is only valid if your `patching.mode` is `source`.
 +$$$
 
 **Note:** To patch the @product-ver@ source code, please upgrade to
-Patching Tool 2.0.4+.
+the latest 2.0 version of the Patching Tool.
 
 $$$ 
 

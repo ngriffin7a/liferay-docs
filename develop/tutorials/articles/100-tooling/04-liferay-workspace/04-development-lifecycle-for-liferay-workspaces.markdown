@@ -36,10 +36,10 @@ folder set by the `liferay.workspace.wars.dir` property in the
 that create WAR-style projects, which should be stored in the `wars` folder.
 
 To learn more about creating projects in a workspace using Blade CLI or Liferay
-@ide@, visit the
+Dev Studio, visit the
 [Creating Projects with Blade CLI](/develop/tutorials/-/knowledge_base/7-1/creating-projects-with-blade-cli)
 and
-[Creating Modules with Liferay @ide@](/develop/tutorials/-/knowledge_base/7-1/creating-modules-with-liferay-ide)
+[Creating Modules with Liferay Dev Studio](/develop/tutorials/-/knowledge_base/7-1/creating-modules-with-liferay-ide)
 tutorials, respectively.
 
 ## Building Projects [](id=building-projects)
@@ -75,7 +75,7 @@ many included subprojects like this:
     include images:base:oracle-jdk:oracle-jdk-6
     include images:base:oracle-jdk:oracle-jdk-7
     include images:base:oracle-jdk:oracle-jdk-8
-    include images:base:liferay-portal:liferay-portal-ce-tomcat-7.0-ga1
+    include images:base:liferay-portal:liferay-portal-ce-tomcat-7.1-ga1
     include images:source-bundles:glassfish
     include images:source-bundles:jboss-eap
     include images:source-bundles:tomcat

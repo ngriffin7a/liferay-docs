@@ -1,5 +1,8 @@
 # Managing the Target Platform for Liferay Workspace [](id=managing-the-target-platform-for-liferay-workspace)
 
+**Important:** The Target Platform feature is provisional and is not officially
+supported at this time.
+
 Liferay Workspace helps you target a specific release of @product@, so
 dependencies get resolved properly. This makes upgrades easy: specify your
 target platform, and Workspace points to the new version. All your dependencies
@@ -69,6 +72,11 @@ Setting the version to develop for takes two steps:
     The versions following a GA1 release of DXP follow service pack versions
     (e.g., `7.1-sp2`, `7.1-sp3`, etc.).
 
+    **Important:** If you're targeting a DXP target platform, you must also pass
+    in your credentials to gain access to DXP artifacts. See the
+    [Accessing DXP Artifacts for the Target Platform](https://customer.liferay.com/documentation/7.1/develop/tutorials/-/official_documentation/tutorials/accessing-dxp-artifacts-for-the-target-platform)
+    for details.
+
 2.  Once the target platform is configured, check to make sure no dependencies
     in your Gradle build files specify a version. The versions are now imported
     from the configured target platform's BOM. For example, a simple MVC
@@ -86,7 +94,7 @@ Setting the version to develop for takes two steps:
 +$$$
 
 **Note**: The `liferay.workspace.target.platform.version` property also sets
-the distro JAR, which can be used in to validate your projects during the build
+the distro JAR, which can be used to validate your projects during the build
 process. See the
 [Validating Modules Against the Target Platform](/develop/tutorials/-/knowledge_base/7-1/validating-modules-against-the-target-platform)
 tutorials for more info.
@@ -126,11 +134,15 @@ To do this, your `build.gradle` file should look similar to this:
     apply plugin: "com.liferay.target.platform"
 
     dependencies {
-        targetPlatformBoms group: "com.liferay", name: "com.liferay.ce.portal.bom", version: "7.1.0"
-        targetPlatformBoms group: "com.liferay", name: "com.liferay.ce.portal.compile.only", version: "7.1.0"
+        targetPlatformBoms group: "com.liferay.portal", name: "release.portal.bom", version: "7.1.0"
+        targetPlatformBoms group: "com.liferay.portal", name: "release.portal.bom.compile.only", version: "7.1.0"
     }
 
-Liferay DXP users must use the `7.1.10.0` version syntax.
+Liferay DXP users must replace the artifact names and versions:
+
+- `release.portal.bom` &rarr; `release.dxp.bom`
+- `release.portal.bom.compile.only` &rarr; `release.dxp.bom.compile.only`
+- `7.1.0` &rarr; `7.1.10.0`
 
 This Gradle code
 

@@ -71,6 +71,7 @@ availability.
 | OpenSocial Gadget | Removed | |
 | Plugins SDK | [GitHub](https://github.com/liferay/liferay-plugins) | Deprecated in 7.0. Replaced by [Liferay Workspace](/develop/tutorials/-/knowledge_base/7-1/liferay-workspace). |
 | Ruby Console | Removed | |
+| Search Portlet | Release (bundle) | Will be removed in a future release. Replaced by the [Search widgets](/discover/portal/-/knowledge_base/7-1/whats-new-with-search). |
 | Shield Integration | Removed | Replaced by X-Pack. |
 | Template Engines | Release (bundle) | Replaced by Freemarker. |
 | vLDAP plugin (Virtual LDAP Server EE) | Removed | |
@@ -81,6 +82,7 @@ availability.
 
 | App | &nbsp;Availability | &nbsp;Notes |
 | --- | ------------------ | ----------- |
+| RSS Publisher | Release (bundle) | See [the article](/discover/portal/-/knowledge_base/7-1/the-rss-publisher-widget) on enabling and using this widget. |
 | User Group Pages (Copy Mode) | Release (bundle) |  |
 | Web Proxy Portlet | [Nexus](https://repository.liferay.com/nexus/service/local/repositories/liferay-public-releases/content/com/liferay/com.liferay.web.proxy.web/2.0.0/com.liferay.web.proxy.web-2.0.0.jar) |  |
 | Web Content Search Portlet | [Nexus](https://repository.liferay.com/nexus/service/local/repositories/liferay-public-releases/content/com/liferay/com.liferay.journal.content.search.web/2.0.0/com.liferay.journal.content.search.web-2.0.0.jar) | The new Search widget can be configured to replace all the unique functionality of the Web Content Search |
@@ -90,7 +92,6 @@ availability.
 
 | App | &nbsp;Availability | &nbsp;Notes |
 | --- | ------------------ | ----------- |
-| Dynamic Data List Form | Removed |  |
 | Web Form | Nexus &rarr; Will be removed. | Final version released for 7.0. |
 
 ## Security [](id=security)
